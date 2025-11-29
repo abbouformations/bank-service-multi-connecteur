@@ -5,7 +5,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import ma.formations.multiconnector.dtos.customer.CustomerDto;
-import ma.formations.multiconnector.enums.AccountStatus;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -13,9 +12,10 @@ import ma.formations.multiconnector.enums.AccountStatus;
 @Data
 public class BankAccountDto {
     private Long id;
+
     private String rib;
     private Double amount;
     private String createdAt;
-    private AccountStatus accountStatus;
+    private String accountStatus;
     private CustomerDto customer;
 }
